@@ -1,0 +1,115 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    position: relative;
+    z-index: 2;
+    height: 4rem;
+    @include mixins.content-center(space-between);
+    padding: 2rem 1.5rem;
+    font-size: .9rem;
+    gap: 1.5rem;
+
+
+    .header__left {
+        width: 50%; height: 100%;
+        @include mixins.content-center(space-between);
+        
+
+        & > label, & > input {
+            width: 80%;
+            padding: .2rem 0 .2rem .5rem;
+            color: variaveis.$secondary-color;
+        }
+
+        & > label {
+            padding: 0 .5rem;
+        }
+
+        & > input{
+            outline: none;
+            border: 1px solid variaveis.$primary-color;
+            border-radius: 3px;
+            padding: .3rem;
+            background-color: #fff;
+        }
+        
+        & > input:hover {
+            border: 1px solid variaveis.$secondary-color;
+        }
+
+        & > img {
+            width: 2.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+
+    .header__right {
+        width: 400px;
+
+
+        & ul {
+            height: 1.5rem;
+            @include mixins.content-center(space-between);
+            gap: 1rem;
+            list-style: none;
+
+            & li {
+                height: 100%;
+                align-content: center;
+                border-bottom: 2px solid transparent;
+
+                & a {
+                    text-decoration: none;
+                    color: variaveis.$primary-color;
+                    font-weight: 600;
+                }
+            }
+
+            & li:hover {
+                border-bottom: 2px solid variaveis.$third-color;
+            }
+        }
+        & .navigation-mobile {
+            display: none;
+            height: 100%;
+            width: 1.8rem;
+            & .row {
+                background-color: variaveis.$primary-color;
+                height: .2rem;
+            }
+
+            & .row:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            &:hover .row {
+                background-color: variaveis.$fourth-color;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        align-items: flex-end;
+
+        .header__left #search {
+            display: none; 
+        }
+
+        .header__right {
+            width: fit-content;
+        }
+    
+        .header__right ul {
+            display: none;
+        }
+    
+        .header__right .navigation-mobile {
+            display: block;
+        }
+    }
+}

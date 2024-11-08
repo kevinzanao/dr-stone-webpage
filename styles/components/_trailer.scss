@@ -1,0 +1,39 @@
+@use '../abstract/variaveis';
+
+.main__trailer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: variaveis.$secondary-color;
+}
+
+.main__trailer__video {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.main__trailer__video .video {
+    text-align: center;
+    background-color: gray;
+}
+
+.main__trailer__video .video:nth-child(1) {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.main__trailer__video .video:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.main__trailer__video .video:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.main__trailer__video .video:nth-child(4) {
+    grid-area: 3 / 2 / 4 / 3;
+}
