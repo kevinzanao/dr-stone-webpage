@@ -2,4 +2,15 @@
 
 footer {
     padding: 1rem;
+    text-align: center;
+    background-color: variaveis.$third-color;
+}
+
+footer p {
+    margin-bottom: .6rem;
+}
+
+footer a {
+    margin: 0 .4rem 0 .4rem;
+    text-decoration: none;
 }

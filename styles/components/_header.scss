@@ -27,11 +27,15 @@ header {
         }
 
         & > input{
-            outline: none;
-            border: 1px solid variaveis.$primary-color;
+            border: none;
+            outline: none !important;   
             border-radius: 3px;
             padding: .3rem;
             background-color: #fff;
+        }
+
+        & > input:focus {
+            border: 2px solid variaveis.$secondary-color;
         }
         
         & > input:hover {
