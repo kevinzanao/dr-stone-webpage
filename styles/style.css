@@ -237,12 +237,12 @@ main .main__synopsis .synopsis__text .text p {
   width: 90%;
 }
 .main__characters .characters__content .characters__description {
+  width: 80%;
   height: 60%;
   margin: 0 auto;
   padding: 1rem 0 3rem;
 }
 .main__characters .characters__content .characters__description article p {
-  max-width: 80%;
   color: #FFF5E0;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem 1rem 0rem 1rem;

@@ -43,12 +43,12 @@
         }
 
         .characters__description {
-            height: 60%;
+            width: 80%; height: 60%;
             margin: 0 auto;
             padding: 1rem 0 3rem;
             article {
                 p {
-                    max-width: 80%;
+                    // max-width: 80%;
                     color: variaveis.$primary-color;
                     background-color: variaveis.$secondary-opacity;
                     padding: 1rem 1rem 0rem 1rem;
