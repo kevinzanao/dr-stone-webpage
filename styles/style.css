@@ -172,7 +172,6 @@ main .main__synopsis .synopsis__text .text p {
   background-color: rgba(0, 0, 0, 0.6);
   line-height: 1.3rem;
   padding: 1rem;
-  border: 2px solid #141E46;
   border-radius: 0.5rem;
 }
 
@@ -245,7 +244,7 @@ main .main__synopsis .synopsis__text .text p {
 .main__characters .characters__content .characters__description article p {
   color: #FFF5E0;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem;
   border-radius: 3px;
   margin: 0 auto;
 }
