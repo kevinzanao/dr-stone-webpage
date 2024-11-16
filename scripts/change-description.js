@@ -8,7 +8,8 @@ const description = [
     "Chrome (クロム Kuromu) is the alleged sorcerer and future scientist of Ishigami Village. Originally a rival, he grew close to Senku as the de-petrified human taught him the art of science. He is one of the protagonists of the series. Having been fascinated with nature's resources since a young age, Chrome was always interested in experimenting with different materials despite having little to no knowledge about humanity's achievements and compounded scientific knowledge over thousands of years. As part of the Kingdom of Science, Chrome serves as the unofficial right hand of Senku; this trust is what makes him one of the Five Wise Commanders. He is also the only post-petrification human among them. Gifted in both natural science and inventing, Chrome tends to alternate between making chemicals with Senku and building with Kaseki."
 ];
 
-console.log(characters)
+
+// Checks which element is being clicked and applies the description of that element
 characters.forEach((element) => {
 
     element.addEventListener('mouseover', function(event) {
