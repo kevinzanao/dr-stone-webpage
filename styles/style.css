@@ -316,12 +316,17 @@ main .main__synopsis .synopsis__text .text p {
   }
 }
 footer {
+  padding: 0 2rem;
+  background-color: #141E46;
+}
+
+footer section {
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
   padding: 3rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(255, 245, 224, 0.7);
 }
 
 footer div {
@@ -337,7 +342,7 @@ footer div:first-child {
 footer div:not(:first-child) {
   opacity: 0.7;
   padding-left: 1rem;
-  border-left: 2px solid #FFF5E0;
+  border-left: 1px solid #FFF5E0;
 }
 
 footer p {
@@ -354,6 +359,7 @@ footer button {
 }
 
 footer button:hover {
+  color: #141E46;
   background-color: #8DECB4;
   cursor: pointer;
 }

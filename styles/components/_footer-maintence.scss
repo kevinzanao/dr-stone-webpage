@@ -1,12 +1,17 @@
 @use '../abstract/variaveis'; 
 
-footer {
+footer  {
+    padding: 0 2rem;
+    background-color: variaveis.$secondary-color;
+}
+
+footer section {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
     padding: 3rem;
     text-align: center;
-    background-color: variaveis.$secondary-opacity;
+    border-top: 1px solid variaveis.$primary-opacity;
 }
 
 footer div {
@@ -22,7 +27,7 @@ footer div:first-child {
 footer div:not(:first-child) {
     opacity: .7;
     padding-left: 1rem;
-    border-left: 2px solid variaveis.$primary-color;
+    border-left: 1px solid variaveis.$primary-color;
 
 }
 
@@ -40,6 +45,7 @@ footer button {
 }
 
 footer button:hover {
+    color: variaveis.$secondary-color;
     background-color: variaveis.$fourth-color;
     cursor: pointer;
 }
