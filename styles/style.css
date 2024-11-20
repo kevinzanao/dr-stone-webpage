@@ -377,4 +377,29 @@ footer ul li a {
 footer a {
   margin: 0 0.4rem 0 0.4rem;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  footer section {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer div {
+    min-width: 200px;
+  }
+  footer div:not(:first-child) {
+    border: none;
+  }
+  footer div:last-child {
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
