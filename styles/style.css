@@ -395,6 +395,7 @@ footer a {
   }
   footer div:not(:first-child) {
     border: none;
+    padding: 0;
   }
   footer div:last-child {
     flex-direction: row;
@@ -406,5 +407,10 @@ footer a {
   }
   footer div ul li {
     text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  footer ul li a {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=style.css.map */
