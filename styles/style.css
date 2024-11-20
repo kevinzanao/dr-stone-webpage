@@ -213,11 +213,11 @@ main .main__synopsis .synopsis__text .text p {
 }
 .main__characters .characters__content ul {
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0 auto;
   list-style: none;
 }
@@ -253,6 +253,11 @@ main .main__synopsis .synopsis__text .text p {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .main__characters .characters__content ul li img {
+    width: 70%;
+  }
+}
 .main__trailer {
   height: 100vh;
   display: flex;

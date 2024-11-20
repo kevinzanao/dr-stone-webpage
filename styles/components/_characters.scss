@@ -18,9 +18,9 @@
 
         ul {
             flex-wrap: wrap;
-            width: 90%;
+            width: 100%;
             @include mixins.content-center(center);
-            gap: 2rem;
+            gap: 1rem;
             margin: 0 auto;
             list-style: none;
     
@@ -63,4 +63,19 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .main__characters {
+        .characters__content {
+            ul {
+                li {
+                    img {
+                        width: 70%;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
