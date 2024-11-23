@@ -317,7 +317,7 @@ main .main__synopsis .synopsis__text .text p {
   }
 }
 footer {
-  padding: 0 2rem;
+  padding: 2rem 2rem 0 2rem;
   background-color: #141E46;
 }
 
