@@ -89,15 +89,11 @@ header .header__right .navigation-mobile:hover .row {
 }
 
 @media (max-width: 768px) {
-  header {
-    align-items: flex-end;
-  }
-  header .header__left #search {
-    display: none;
+  header .header__left {
+    width: 80%;
   }
   header .header__right {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 20%;
   }
   header .header__right ul {
     display: none;

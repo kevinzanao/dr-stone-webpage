@@ -98,14 +98,13 @@ header {
 @media (max-width: 768px) {
 
     header {
-        align-items: flex-end;
 
-        .header__left #search {
-            display: none; 
+        .header__left {
+            width: 80%;
         }
 
         .header__right {
-            width: fit-content;
+            width: 20%;
         }
     
         .header__right ul {
